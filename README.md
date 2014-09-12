@@ -16,5 +16,5 @@ scraper.py will provide you with logging, error handling, http requests and head
   * Referer header is automically updated with latest search results page.
   
 # How To
-I'm far too lazy to wright this now. 
-If anyone is out there and interested, send me a message and I'll start working on it.
+I'm far too lazy to wright this now and I don't expect this to garner much attention.
+Take a look at startribune.py for an example of a working webscraper. Send me a message if you have any questions.
