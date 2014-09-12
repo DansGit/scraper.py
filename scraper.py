@@ -88,7 +88,7 @@ class Scraper(object):
         """Scraper's main loop. Pulls a news website's search result page
         via format url and extracts article links with extract_links().
         Then it loops through those extracted links and pulls out the article
-        with extract_article() and metadata with extract_metadata() Lastly,
+        with extract_article() and metadata with extract_metadata(). Lastly,
         it yields the results in a dictionary.
         Arguments:
             pause (tuple): Program will pause for a random number of seconds
