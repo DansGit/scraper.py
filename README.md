@@ -12,7 +12,7 @@ requests/headers, and even a progress bar!
 * A progress bar that utilizes Monty Carlo estimation to predict finish times.
 * Decent logging functionality.
 * Headers that act like a "real boy" or rather, like a real browser.
-  * User-Agent is chosen randomly from a list 19 standard user-agent strings.
+  * User-Agent is chosen randomly from a list of 19 standard User-Agent strings.
   * Other headers mimic standard browser headers.
   * Referer header is automatically updated with latest search results page.
 
