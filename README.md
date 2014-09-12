@@ -17,5 +17,5 @@ requests/headers, and even a progress bar!
   * Referer header is automatically updated with latest search results page.
 
 # How To
-I'm far too lazy to wright this now.
+I'm far too lazy to write this now.
 Take a look at startribune.py for an example of a working web scraper. Send me a message if you have any questions.
