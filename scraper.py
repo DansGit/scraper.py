@@ -14,6 +14,7 @@ class Scraper(object):
         logging.basicConfig(filename='log',
                 filemode='w',
                 level=logging.INFO)
+        self.logger = logging.getLogger(__name__)
 
         # URL with {} in place of page number parameter.
         # e.g. ...&page=3 becomes ...&page={}
@@ -113,7 +114,7 @@ class Scraper(object):
 
 
             # log search results page turn
-            logging.info("Extracting search results from {}".format(url))
+            self.logger.info("Extracting search results from {}".format(url))
 
             # Begin scraping
             try:
@@ -130,7 +131,7 @@ class Scraper(object):
                     if count > self._num_articles:
                         break
 
-                    logging.info("Extracting article from {}".format(link))
+                    self.logger.info("Extracting article from {}".format(link))
 
                     # Download article
                     raw_article = requests.get(link, headers=self.headers)
@@ -152,12 +153,17 @@ class Scraper(object):
                     yield article
 
             except ParseError as e:
-                # Log error report
-                logging.error(str(e))
+                # Log error, then continue
+                self.logger.error(str(e))
 
                 # Update counter and progressbar
                 count += 1
                 pbar.tick()
+            except Exception as e:
+                # Log error, then exit
+                self.logger.error('Error occured while in scrape()',
+                        exc_info=True)
+                raise e
 
 
 class ParseError(Exception):
