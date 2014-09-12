@@ -16,5 +16,5 @@ Scraper.py will provide you with logging, error handling, http requests and head
   * Referer header is automically updated with latest search results page.
   
 # How To
-I'm far to lazy to wright this now. 
+I'm far too lazy to wright this now. 
 If anyone is out there and interested, send me a message and I'll start working on it.
