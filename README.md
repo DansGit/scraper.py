@@ -5,7 +5,7 @@ This is where I store my various webscrapers for my projects.
 
 Of interest to you may be the scraper.py file, which provides an abstract base class for the scraping of news websites.
 All you have to do is write the extract_links(), extract_metadata(), and maybe the extract_article() methods and
-scraper.py will provide you with logging, error handling, http requests and headers, and even a progressbar!
+scraper.py will provide you with logging, error handling, http requests and headers, and even a progress bar!
 
 # Features
 * A progress bar that utilizes monty carlo estimation to predict finish times.
