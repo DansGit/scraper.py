@@ -9,11 +9,11 @@ Scraper.py will provide you with logging, error handling, http requests and head
 
 # Features
 * A progress bar that utilizes monty carlo estimation to predict finish times.
-* Decent logging functionality
-* Headers that act like a real boy
+* Decent logging functionality.
+* Headers that act like a "real boy."
   * User-Agent is chosen randomly from a list of over 20 standard user-agent strings.
-  * Other headers mimic standard browser headers
-  * Referer header is automically updated with latest search results page
+  * Other headers mimic standard browser headers.
+  * Referer header is automically updated with latest search results page.
   
 # How To
 I'm far to lazy to wright this now. 
